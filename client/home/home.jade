@@ -22,7 +22,7 @@ section#head.section(ng-hide='hideMain')
         h2.subtitle Developer
         h3.tagline Welcome to my website!
 
-section#about.section(ng-hide='hideAbout')
+section#about.section(ng-hide='hideAbout', style='background-image:src("/assets/splash.jpg");')
   .container
     .row
       .col-xs-4.name
@@ -34,10 +34,165 @@ section#about.section(ng-hide='hideAbout')
       .col-md-6
         p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
         p It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      
+
 section#portfolio.section(ng-hide='hidePortfolio')
   .container
-    h1.text-center.title Portfolio
+        .row
+          h1 SOME OF MY PROJECTS
+
+          // col-lg-4
+        // /row
+        .row.mt
+          .col-lg-3.col-md-3.col-sm-6.col-xs-12.desc
+            .project-wrapper
+              .project
+                h3 Journey of Oscar Diggs
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href='/assets/portfolio/port02.jpg')
+                      img.img-responsive(src='/assets/portfolio/port02.jpg', alt='')
+                  .overlay
+                .description
+                  h4 Desktop Game
+                  h4 Get Oscar Diggs to Oz so he can become the wizard! Built using Phaser.io.
+                  h5 Team: Brian Hiatt, Kayla Jones, Daniel Roden, Shruti Sharma
+                .deployed
+                  a(href='http://lizahcarter.github.io/mario/')
+                    i.fa.fa-play
+                  a(href='http://github.com/lizahcarter/mario')
+                    i.fa.fa-code
+
+          // col-lg-4
+          .col-lg-3.col-md-3.col-sm-6.col-xs-12.desc
+            .project-wrapper
+              .project
+                h3 The Equalizer
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href='/assets/portfolio/port01.jpg')
+                      img.img-responsive(src='/assets/portfolio/port01.jpg', alt='')
+                  .overlay
+                .description
+                  h4 Desktop Game
+                  h4 Demolish all the barriers to equality! Built using Phaser.io.
+                  h5 Team: Kayla Jones, Shruti Sharma
+                .deployed
+                  a(href='http://lizahcarter.github.io/roundup/')
+                    i.fa.fa-play
+                  a(href='http://github.com/lizahcarter/roundup')
+                    i.fa.fa-code
+          // col-lg-4
+          .col-lg-3.col-md-3.col-sm-6.col-xs-12.desc
+            .project-wrapper
+              .project
+                h3 fluShot
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href='/assets/portfolio/port03.jpg')
+                      img.img-responsive(src='/assets/portfolio/port03.jpg', alt='')
+                  .overlay
+                .description
+                  h4 Mobile Game
+                  h4 Destroy all of the viruses before they form a critical mass! Built using Ionic, HTML5 Canvas, and Xcode/Android SDK.
+                  h5 Team: Brian Hiatt, Kayla Jones, Daniel Roden, Shruti Sharma
+                .deployed
+                  a(href='http://play.google.com/store/apps/details?id=com.ionicframework.gpvirusgame730011&hl=en')
+                    i.fa.fa-play
+                  a(href='http://github.com/LizaHCarter/gp-virus-game')
+                    i.fa.fa-code
+          .col-lg-3.col-md-3.col-sm-6.col-xs-12.desc
+            .project-wrapper
+              .project
+                h3 CaddyHack
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href='/assets/portfolio/port04.jpg')
+                      img.img-responsive(src='/assets/portfolio/port04.jpg', alt='')
+                  .overlay
+                .description
+                  h4 Mobile Game
+                  h4 Use your phone's gyroscope to get the ball in the hole! Built using Ionic, HTML5 Canvas, and Xcode/Android SDK.
+                  h5 Team: Sarah Pearson, Logan Richardson
+                .deployed
+                  a(href='http://play.google.com/store/apps/details?id=com.ionicframework.llsgolf414388&hl=en')
+                    i.fa.fa-play
+                  a(href='http://github.com/LizaHCarter/lls-golf')
+                    i.fa.fa-code
+        .row.mt
+          .col-lg-3.col-md-3.col-sm-6.col-xs-12.desc
+            .project-wrapper
+              .project
+                h3 EnlighTN
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href='/assets/portfolio/enlightn.jpg')
+                      img.img-responsive(src='/assets/portfolio/enlightn.jpg', alt='')
+                  .overlay
+                .description
+                  h4 Web Application
+                  h4 Culture and art finder for the city of Nashville. Built using AngularJS, MEAN Stack, and Google Maps API.
+                  h5 Team: Zoe Ames, Brian Hiatt, Kayla Jones, Shruti Sharma
+                .deployed
+                  a(href='http://dowerk.liza.link')
+                    i.fa.fa-play
+                  a(href='http://github.com/lizahcarter/do-werk')
+                    i.fa.fa-code
+          .col-lg-3.col-md-3.col-sm-6.col-xs-12.desc
+            .project-wrapper
+              .project
+                h3 do werk
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href='/assets/portfolio/dowerk.jpg')
+                      img.img-responsive(src='/assets/portfolio/dowerk.jpg', alt='')
+                  .overlay
+                .description
+                  h4 Web Application
+                  h4 Social coding app that shows all happy hours with free wifi. Built using AngularJS and MEAN Stack.
+                .deployed
+                  a(href='http://dowerk.liza.link')
+                    i.fa.fa-play
+                  a(href='http://github.com/lizahcarter/do-werk')
+                    i.fa.fa-code
+
+          // col-lg-4
+          .col-lg-3.col-md-3.col-sm-6.col-xs-12.desc
+            .project-wrapper
+              .project
+                h3 Unmarked White Van
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href='/assets/portfolio/whitevan.jpg')
+                      img.img-responsive(src='/assets/portfolio/whitevan.jpg', alt='')
+                  .overlay
+              .description
+                h4 Web Application
+                h4 Match.com for serial killers. Built using MEAN Stack.
+                h5 Team: Brian Hiatt, Kayla Jones, Shruti Sharma
+              .deployed
+                a(href='http://whitevan.liza.link')
+                  i.fa.fa-play
+                a(href='http://github.com/lizahcarter/white-van')
+                  i.fa.fa-code
+          .col-lg-3.col-md-3.col-sm-6.col-xs-12.desc
+            .project-wrapper
+              .project
+                h3 Wine Seller
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href='/assets/portfolio/wineseller.jpg')
+                      img.img-responsive(src='/assets/portfolio/wineseller.jpg', alt='')
+                  .overlay
+                .description
+                  h4 Web Application
+                  h4 E-trading site for wine collectors. Built using MEAN Stack and the Google Maps API.
+                  h5 Team: Adam Barnhard, Daniel Roden
+              .deployed
+                a(href='http://wineseller.liza.link')
+                  i.fa.fa-play
+                a(href='http://github.com/lizahcarter/wine-seller')
+                  i.fa.fa-code
+
 
 section#contact.section(ng-hide='hideContact')
   .container
