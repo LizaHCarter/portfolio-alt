@@ -27,7 +27,6 @@
   "disallowSpacesInsideParentheses": true,
   "requireCommaBeforeLineBreak": true,
   "disallowMultipleLineStrings": true,
-  "validateQuoteMarks": { "mark": "'", "escape": true },
   "disallowMixedSpacesAndTabs": true,
   "disallowTrailingWhitespace": true,
   "disallowTrailingComma": true,

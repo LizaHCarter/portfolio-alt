@@ -1,2 +1,48 @@
-p {{title}}
-p Home
+.nav.mainmenu
+  .container
+    .dropdown
+      button#dropdownMenu1.btn.btn-info.btn-lg.dropdown-toggle(type='button', data-toggle='dropdown')
+        .glyphicon.glyphicon-align-justify
+      ul.dropdown-menu(role='menu', aria-labelledby='dropdownMenu1')
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', ng-click='toggleHome()') Welcome
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', ng-click='toggleAbout()') About Me
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', ng-click='togglePortfolio()') Portfolio
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', ng-click='toggleContact()') Contact
+
+
+section#head.section(ng-hide='hideMain')
+  .container
+    .row
+      col-md-10.col-lg-10.col-md-offset-1.col-lg-offset-1.text-center
+        h1.title Liza Carter
+        h2.subtitle Developer
+        h3.tagline Welcome to my website!
+
+section#about.section(ng-hide='hideAbout')
+  .container
+    .row
+      .col-xs-4.name
+        img.img-responsive#profpic(src='/assets/pic.jpg')
+        p LIZA CARTER
+      .col-xs-8.name-desc
+        h2 WEB DEVELOPER | SHARP-SHOOTER | NASHVILLE, TN
+        .name-zig
+      .col-md-6
+        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        p It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      
+section#portfolio.section(ng-hide='hidePortfolio')
+  .container
+    h1.text-center.title Portfolio
+
+section#contact.section(ng-hide='hideContact')
+  .container
+    h1.text-center.title Contact Me
+    .row
+      .col-sm-8.col-sm-offset-2.text-center
+        p.lead Feel free to reach out to me through any of the following mediums:
+        p lizahcarter@gmail.com
